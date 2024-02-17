@@ -1,4 +1,14 @@
-
+const allBtn = document.getElementsByClassName('add-btn');
+// console.log(allBtn);
+let count = 0;
+for(const btn of allBtn){
+    btn.addEventListener('click', function(e){
+        // console.log("BOSS SELECTED: ");
+        count += 1;
+        // console.log(count);
+        document.getElementById('cart-count').innerHTML = count;
+    })
+}
 
 // let count = 0;
 
